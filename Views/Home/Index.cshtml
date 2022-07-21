@@ -1,0 +1,61 @@
+﻿@model bugra_proj.Models.kayit
+@{
+    Layout = null;
+    kayit m =new kayit();
+}
+
+<div class="text-center">
+    <table>
+        <tr>
+            <h1 class="display-4">Araç Arıza Tespit Merkezi</h1>
+        </th>
+        <tr>
+            <p> BİLGİ: </p>
+            Model farketmezsizin arabalara takılan bu cihaz ile arabalar arıza yapmadan önce yetkili servise ve araç
+            sahibine önceden bildirim gelir ve yetkili servisten hemen randevu alınır.
+        </tr>
+
+    </table>
+
+</div>
+
+@{
+    Layout = null;
+}
+
+<h1>GİRİŞ YAPINIZ</h1>
+<form id="form1" method="post" action="https://www.youtube.com/watch?v=LAAZwUh-E68" 
+    enctype="application/x-www-form-urlencoded">
+    <div>
+
+        <label for="İSİM"></label>
+        @Html.LabelFor(m => m.isim)
+
+    </div>
+    <div>
+        <input name="İSİM type="İSİM" />
+    </div>
+    <div>
+        <label for="SOYİSİM">SOYİSİM</label>
+    </div>
+    <div>
+        <input name="SOYİSİM" type="text" />
+    </div>
+    <div>
+        <button type="EKLE" value="EKLE">
+            EKLE 
+        </button>
+ 
+</form>
+
+<div class="text-center">
+    <h1 class="display-4">ÖRNEK:</h1>
+    <p> </p>
+    .... model aracınızda motor piston yaylarındaki yağ bittiğinde arıza çıkarmadan önce yetkili servise ve araç
+    sahibine bildirim gider, araç sahibi yetkili servis ile görüşerek önceden randevu alır.
+</div>
+
+@{
+    Console.WriteLine("selamlar");
+    Layout = null;
+}
